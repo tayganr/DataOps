@@ -6,11 +6,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ## Technology Scope
 <\<insert table matrix here>>
 ## Pre Requisites
-1. Ordered List One
-2. Ordered List Two
-3. Ordered List Three
-4. Ordered List Four
-5. Ordered List Five
+1. Access to an [Azure Subscription](https://azure.microsoft.com/en-us/free/) with the ability to create services.
+2. [Postman](https://www.getpostman.com/) installed on your local machine.
+
+Note:
+* You can create a [free Azure account](https://azure.microsoft.com/en-us/free/) with $200 USD credit to explore any Azure service for 30 days.
+* If you are new to Postman, check out [Part 1: Sending a Request](https://www.youtube.com/watch?v=YKalL1rVDOE) in the New to Postman video series.
+
 ## Level
 This course is designed as an intermediate level course for AI engineers and/or Cloud Solution Architects.
 ## Course Modules
