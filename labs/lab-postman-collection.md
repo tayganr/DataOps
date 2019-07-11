@@ -17,6 +17,8 @@ In this lab, we will create a collection of HTTP requests using Postman. These r
    | subscription_key | To find your Form Recognizer subscription key, navigate to the resource within the Azure Portal and open **Keys** under Resource Management |
    | shared_access_signature | This is the Shared Access Signature URI generated from the previous [environment setup lab](https://github.com/tayganr/DataOps/blob/master/labs/lab-environment-setup.md#step-4---generate-a-shared-access-signature). |
    | model_id | This can be left blank for now as we don't have a model id just yet, this will happen after we train a model. |
+
+
 6. Click **Create**
 
 ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-variables.png "Collection Variables")
