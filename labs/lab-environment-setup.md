@@ -57,9 +57,9 @@ In this lab, you will create a Form Recognizer service and an Azure Storage Acco
    3. Click the folder icon
    4. Select all the forms in the **training data** folder from the extracted zip file and click **Open**
    5. Click **Upload**
-  
-  ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-upload5.png "Create blob container")
+
+      ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-upload5.png "Create blob container")
 
    You should now have five images uploaded to the storage account.
      
-     ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-upload6.png "Uploaded files")
+      ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-upload6.png "Create blob container")
