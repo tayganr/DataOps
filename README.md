@@ -23,7 +23,7 @@ This course is designed as an intermediate level course for AI engineers and/or 
 
 ## Course Modules
 1. Lab 1 - [Environment Setup](https://github.com/tayganr/DataOps/blob/master/labs/lab-environment-setup.md)
-2. Lab 2 - TBC
+2. Lab 2 - [Postman Collection](https://github.com/tayganr/DataOps/blob/master/labs/lab-postman-collection.md)
 3. Lab 3 - TBC
 4. Lab 4 - TBC
 5. Lab 5 - TBC
@@ -32,6 +32,6 @@ This course is designed as an intermediate level course for AI engineers and/or 
 * [Access Request](https://aka.ms/FormRecognizerRequestAccess)
 * [Product Page](https://aka.ms/form-recognizer)
 * [Documentation](https://aka.ms/form-recognizer/docs)
-* [API Reference](https://aka.ms/form-recognizer/api){:target="_blank"}
+* [API Reference](https://aka.ms/form-recognizer/api)
 * [Pricing](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/form-recognizer/)
 * [MS Build - [BRK2002] Announcing Form Recognizer](https://mybuild.techcommunity.microsoft.com/sessions/76962?source=sessions)
