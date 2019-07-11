@@ -1,5 +1,5 @@
 # Environment Setup
-In this lab, you will create a Form Recognizer service and an Azure Storage Account. We recommend keeping both in a new and unique resource group, this will make it easier to delete at the end of the workshop.
+In this lab, you will create a Form Recognizer service, an Azure Storage Account, upload some training data, and generate a Shared Access Signature. We recommend keeping all resources within the same resource group, this will make it easier to delete at the end of the workshop.
 
 ## Table of Contents
    [Step 1 - Create a Form Recognizer Resource](#step-1---create-a-form-recognizer-resource)  
