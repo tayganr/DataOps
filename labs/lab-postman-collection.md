@@ -11,6 +11,7 @@ In this lab, we will create a collection of HTTP requests using Postman. These r
 3. Provide the collection a name (e.g. Form Recognizer)
 4. Navigate to **Variables**
 5. Create the following variables with their corresponding values:  
+
    | VARIABLE | VALUE |
    | ------------- | ------------- |
    | region | This will be ```westus2``` or ```westeurope``` depending on which location you selected when creating the Form Recognizer service. |
