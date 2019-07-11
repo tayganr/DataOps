@@ -34,4 +34,19 @@ In this lab, you will create a Form Recognizer service and an Azure Storage Acco
       ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-create2.png "Azure Storage Account Create")
 
 ## Step 3 - Upload a Training Data Set
-1. Download the training data set.
+1. Download the [sample forms data](https://github.com/tayganr/DataOps/raw/master/resources/data/forms.zip) and extract the contents of the zip file on to your local machine.
+2. Open the Azure Portal and navigate to your Storage Account by clicking All Services > Storage > Storage accounts.
+
+      ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-upload1.png "Azure Storage Account")
+
+3. Click through to open your storage account and click **Storage Explorer**. Note: This version of Storage Explorer available in the Azure Portal is available in [public preview](https://azure.microsoft.com/en-gb/updates/storage-explorer-preview-now-available-in-azure-portal/). The client side version of the application is also [available](https://azure.microsoft.com/en-us/features/storage-explorer/).
+
+      ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-upload2.png "Storage Explorer")
+
+4. Right-click on Blob Containers and click **Create blob container**.
+
+      ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-upload3.png "Create blob container")
+
+5. Provide the container a name (e.g. training) and click **OK**.
+
+      ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-upload4.png "Create blob container")
