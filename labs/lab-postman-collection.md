@@ -15,18 +15,17 @@ In this lab, we will create a collection of HTTP requests using Postman. These r
    | VARIABLE | VALUE |
    | ------------- | ------------- |
    | region | This will be ```westus2``` or ```westeurope``` depending on which location you selected when creating the Form Recognizer service. |
-   | subscription_key | To find your Form Recognizer subscription key, navigate to the resource within the Azure Portal and open **Keys** under Resource Management |
+   | subscription_key | To find your Form Recognizer subscription key, navigate to the resource within the Azure Portal and open **Keys** under Resource Management. |
    | shared_access_signature | This is the Shared Access Signature URI generated from the previous [environment setup lab](https://github.com/tayganr/DataOps/blob/master/labs/lab-environment-setup.md#step-4---generate-a-shared-access-signature). |
    | model_id | This can be left blank for now as we don't have a model id just yet, this will happen after we train a model. |
 
 
-6. Click **Create**
-
-![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-variables.png "Collection Variables")
+6. Click **Create**  
+   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-variables.png "Collection Variables")
 
 ## Step 2 - Create a Request (Train Model)
 1. Right-click on the collection and click **Add Request**  
-![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-request.png "Add Request")
+   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-request.png "Add Request")
 
 ## Step 1 - Train Model
 Create and train a custom model. The train request must include a source parameter that is either an externally accessible Azure Storage blob container Uri (preferably a Shared Access Signature Uri) or valid path to a data folder in a locally mounted drive.
