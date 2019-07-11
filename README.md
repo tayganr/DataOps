@@ -22,7 +22,7 @@ Notes:
 This course is designed as an intermediate level course for AI engineers and/or Cloud Solution Architects.
 
 ## Course Modules
-1. Lab 1 - Environment Setup
+1. Lab 1 - [Environment Setup](https://github.com/tayganr/DataOps/blob/master/labs/lab-environment-setup.md)
 2. Lab 2 - TBC
 3. Lab 3 - TBC
 4. Lab 4 - TBC
