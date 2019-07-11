@@ -5,6 +5,8 @@ In this lab, we will create a collection of HTTP requests using Postman. These r
    [Step 1 - Train Model](#step-1---train-model)  
 
 ## Step 1 - Train Model
+Create and train a custom model. The train request must include a source parameter that is either an externally accessible Azure Storage blob container Uri (preferably a Shared Access Signature Uri) or valid path to a data folder in a locally mounted drive.
+
 **HTTP Method**  
 POST
 
