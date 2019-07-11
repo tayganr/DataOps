@@ -6,16 +6,16 @@ In this lab, we will create a collection of HTTP requests using Postman. These r
 
 ## Step 1 - Train Model
 **HTTP Method**  
-<span style="color:#FFB400">POST</span>
+POST
 
 **Endpoint**  
-https://<span style="color:#F2774A">{{region}}</span>.api.cognitive.microsoft.com/formrecognizer/v1.0-preview/custom/train
+https://{{region}}.api.cognitive.microsoft.com/formrecognizer/v1.0-preview/custom/train
 
-**Headers**
-| Key  | Value |
+**Headers**  
+| Key | Value |
 | ------------- | ------------- |
-| Content-Type  | application/json  |
-| Ocp-Apim-Subscription-Key  | <span style="color:#F2774A">{{subscription_key}}</span>  |
+| Content-Type | application/json |
+| Ocp-Apim-Subscription-Key | {{subscription_key}} |
 
 **Body**
 ```json
