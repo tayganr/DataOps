@@ -1,6 +1,11 @@
 # Environment Setup
 In this lab, you will create a Form Recognizer service and an Azure Storage Account. We recommend keeping both in a new and unique resource group, this will make it easier to delete at the end of the workshop.
 
+## Table of Contents
+   [Step 1 - Create a Form Recognizer Resource](#step-1---create-a-form-recognizer-resource)  
+   [Step 2 - Create an Azure Storage Account](#step-2---create-an-azure-storage-account)  
+   [Step 3 - Upload a Training Data Set](#step-3---upload-a-training-data-set)
+
 ## Step 1 - Create a Form Recognizer Resource
 1. If you have requested access to the Form Recognizer service and your access request has been approved, click the embedded Azure Portal link from the access confirmation email.
   
@@ -49,7 +54,7 @@ In this lab, you will create a Form Recognizer service and an Azure Storage Acco
 
 5. Provide the container a name (e.g. training) and click **OK**.
       
-      ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-upload4.png "Create blob container")
+      ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-upload4.png "Name blob container")
 
 6. Perform the following steps to upload the training data set to the Blob Storage.
    1. Navigate to the container
@@ -58,8 +63,8 @@ In this lab, you will create a Form Recognizer service and an Azure Storage Acco
    4. Select all the forms in the **training data** folder from the extracted zip file and click **Open**
    5. Click **Upload**
 
-      ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-upload5.png "Create blob container")
+      ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-upload5.png "Upload image")
 
    You should now have five images uploaded to the storage account.
      
-      ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-upload6.png "Create blob container")
+      ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-upload6.png "Uploaded images")
