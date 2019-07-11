@@ -31,4 +31,4 @@ In this lab, you will create a Form Recognizer service and an Azure Storage Acco
    * **Storage Account Name:** The name must be unique across all existing storage account names in Azure.
    * **Location:** This is the Azure region in which the resource will be deployed. It is recommended to deploy to the same region as the Form Recognizer service.
 
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-create1.png "Azure Storage Account Create")
+   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-create2.png "Azure Storage Account Create")
