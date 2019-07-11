@@ -25,10 +25,13 @@ In this lab, you will create a Form Recognizer service and an Azure Storage Acco
 
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-create1.png "Azure Storage Account Create")
 
-2. Once presented with the Storage Account resource creation screen, populate the form with the following values and click **Review + create**.
+2. Once presented with the Storage Account resource creation screen, populate the form with the following values, click **Review + create** and finally click **Create** at the confirmation screen.
    * **Subscription:** This is the Azure subscription where you would like to create the resource.
    * **Resource Group:** A resource group is a logical container of Azure resources. Select the same resource group as the Form Recognizer service.
    * **Storage Account Name:** The name must be unique across all existing storage account names in Azure.
    * **Location:** This is the Azure region in which the resource will be deployed. It is recommended to deploy to the same region as the Form Recognizer service.
 
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-create2.png "Azure Storage Account Create")
+      ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-create2.png "Azure Storage Account Create")
+
+## Step 3 - Upload a Training Data Set
+1. Download the training data set.
