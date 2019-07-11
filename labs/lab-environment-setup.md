@@ -4,7 +4,7 @@ In this lab, you will create a Form Recognizer service and an Azure Storage Acco
 ## Table of Contents
    [Step 1 - Create a Form Recognizer Resource](#step-1---create-a-form-recognizer-resource)  
    [Step 2 - Create an Azure Storage Account](#step-2---create-an-azure-storage-account)  
-   [Step 3 - Upload a Training Data Set](#step-3---upload-a-training-data-set)
+   [Step 3 - Upload a Training Data Set](#step-3---upload-a-training-data-set)  
    [Step 4 - Generate a Shared Access Signature](#step-4---generate-a-shared-access-signature)
 
 ## Step 1 - Create a Form Recognizer Resource
