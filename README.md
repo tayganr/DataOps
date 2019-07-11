@@ -34,4 +34,4 @@ This course is designed as an intermediate level course for AI engineers and/or 
 * [Documentation](https://aka.ms/form-recognizer/docs)
 * [API Reference](https://aka.ms/form-recognizer/api)
 * [Pricing](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/form-recognizer/)
-* [MS Build - [BRK2002] Annoucning Form Recognizer](https://mybuild.techcommunity.microsoft.com/sessions/76962?source=sessions)
+* [MS Build - [BRK2002] Announcing Form Recognizer](https://mybuild.techcommunity.microsoft.com/sessions/76962?source=sessions)
