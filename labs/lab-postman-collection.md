@@ -12,10 +12,6 @@ POST
 https://{{region}}.api.cognitive.microsoft.com/formrecognizer/v1.0-preview/custom/train
 
 **Headers**  
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
 
 | Key | Value |
 | ------------- | ------------- |
