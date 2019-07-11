@@ -5,13 +5,14 @@ In this lab, you will create a Form Recognizer service and an Azure Storage Acco
    [Step 1 - Create a Form Recognizer Resource](#step-1---create-a-form-recognizer-resource)  
    [Step 2 - Create an Azure Storage Account](#step-2---create-an-azure-storage-account)  
    [Step 3 - Upload a Training Data Set](#step-3---upload-a-training-data-set)
+   [Step 4 - Generate a Shared Access Signature](#step-4---generate-a-shared-access-signature)
 
 ## Step 1 - Create a Form Recognizer Resource
 1. If you have requested access to the Form Recognizer service and your access request has been approved, click the embedded Azure Portal link from the access confirmation email.
   
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-form-recognizer-public-preview.png "Form Recognizer Public Preview")
 
-2. Once logged in, you will be presented with the Form Recognizer resource creation screen. Populate the form with the following values, click the checkbox to confirm you have read and understood the notice, and click **Create**.
+2. Once logged in to the Azure Portal, you will be presented with the Form Recognizer resource creation screen. Populate the form with the following values, click the checkbox at the bottom to confirm you have read and understood the notice, and click **Create**.
    * **Name:** This will be the name of your Form Recognizer instance.
    * **Subscription:** This is the Azure subscription where you would like to create the resource.
    * **Location:** This is the Azure region in which the resource will be deployed. The Form Recognizer Resource is currently available in two regions; (US) West US 2 and (Europe) West Europe.
@@ -56,15 +57,27 @@ In this lab, you will create a Form Recognizer service and an Azure Storage Acco
       
       ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-upload4.png "Name blob container")
 
-6. Perform the following steps to upload the training data set to the Blob Storage.
-   1. Navigate to the container
-   2. Click **Upload**
-   3. Click the folder icon
-   4. Select all the forms in the **training data** folder from the extracted zip file and click **Open**
-   5. Click **Upload**
+6. Perform the following steps to upload the training data set to the Blob Storage.  
+   1\. Navigate to the container  
+   2\. Click **Upload**  
+   3\. Click the folder icon  
+   4\. Select all the forms in the **training data** folder from the extracted zip file and click **Open**  
+   5\. Click **Upload**  
 
       ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-upload5.png "Upload image")
 
    You should now have five images uploaded to the storage account.
      
       ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-upload6.png "Uploaded images")
+
+## Step 4 - Generate a Shared Access Signature
+A shared access signature (SAS) is a URI that grants restricted access rights to Azure Storage resources. This will be needed by the Form Recognizer service when training a model.
+1. Right-click on the blob container and select **Get Shared Access Signature**.
+
+      ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-sas1.png "Get Shared Access Signature")
+
+2. Click **Create**.
+      ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-sas2.png "Create Shared Access Signature")
+
+3. Click **Copy**. Paste this URI somewhere to be retrieved later (e.g. Notepad).
+      ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-sas3.png "Copy Shared Access Signature")
