@@ -2,7 +2,7 @@
 ## About this course
 Welcome to the Form Recognizer (FR) Solution Accelerator! This accelerator was built to provide developers with all of the resources needed to quickly build an initial form understanding prototype with Azure FR service. Use this accelerator to jump start your development efforts with your own data or as a learning tool to better understand how FR can be leveraged for the unique needs of your business.
 
-In this repository, we've provided you with all of the artifacts needed to quickly create a FR content management pipeline including: templates for deploying the appropriate Azure resources, assets for creating your first trained form recognizer, a pipeline to help automate the ingestion, storage. This extends the ability to allow you to build your own triggers and suporting worksflow to react to errors or specifc content that has been extractyed. We've infused best practices throughout the documentation to help further guide you.
+In this repository, we've provided you with all of the artifacts needed to quickly create a FR content management pipeline including: templates for deploying the appropriate Azure resources, assets for creating your first trained form recognizer, a pipeline to help automate the ingestion, storage. This extends the ability to allow you to build your own triggers and suporting worksflow to react to errors or specifc content that has been extractyed. We've opted to use serverless building blocks like Functions and Flow to create the orchestration with easy to follow recipes.
 
 ## Architecture
 <\<insert image here\>>
