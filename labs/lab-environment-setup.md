@@ -23,6 +23,8 @@ In this lab, you will create a Form Recognizer service, an Azure Storage Account
     * For the purposes of this workshop, the free tier is sufficient.
     * It is recommended to select the region that is physically closest to you.
 
+<div align="right"><a href="#lab-1---environment-setup">↥ back to top</a></div>
+
 ## Step 2 - Create an Azure Storage Account
 1. In the Azure Portal, click **Create a resource**, click **Storage**, click **Storage account**.  
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-create1.png "Azure Storage Account Create")
@@ -33,6 +35,8 @@ In this lab, you will create a Form Recognizer service, an Azure Storage Account
    * **Storage Account Name:** The name must be unique across all existing storage account names in Azure.
    * **Location:** This is the Azure region in which the resource will be deployed. It is recommended to deploy to the same region as the Form Recognizer service.  
       ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-create2.png "Azure Storage Account Create")
+
+<div align="right"><a href="#lab-1---environment-setup">↥ back to top</a></div>
 
 ## Step 3 - Upload a Training Data Set
 1. Download the [sample forms data](https://github.com/tayganr/DataOps/raw/master/resources/data/forms.zip) and extract the contents of the zip file on to your local machine.
@@ -60,6 +64,8 @@ In this lab, you will create a Form Recognizer service, an Azure Storage Account
    You should now have five images uploaded to the storage account.  
       ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-upload6.png "Uploaded images")
 
+<div align="right"><a href="#lab-1---environment-setup">↥ back to top</a></div>
+
 ## Step 4 - Generate a Shared Access Signature
 A shared access signature (SAS) is a URI that grants restricted access rights to Azure Storage resources. This will be needed by the Form Recognizer service when training a model.
 1. Right-click on the blob container and select **Get Shared Access Signature**.  
@@ -71,6 +77,8 @@ A shared access signature (SAS) is a URI that grants restricted access rights to
 3. Click **Copy**. Paste this URI somewhere to be retrieved later (e.g. Notepad).  
       ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-storage-account-sas3.png "Copy Shared Access Signature")
 
+<div align="right"><a href="#lab-1---environment-setup">↥ back to top</a></div>
+
 ## Next Steps
 By this point you should have the following resources available:
 * Form Recognizer Cognitive Service (with endpoint and subscription key)
@@ -78,3 +86,5 @@ By this point you should have the following resources available:
 * [Sample Data](https://github.com/tayganr/DataOps/raw/master/resources/data/forms.zip) (1. Downloaded; 2. Extracted locally; 3. Training forms uploaded to Azure Blob Storage)
 
 If all of these pre-steps are complete, click here to progress to [Lab 2 - Postman Collection](https://github.com/tayganr/DataOps/blob/master/labs/lab-postman-collection.md).
+
+<div align="right"><a href="#lab-1---environment-setup">↥ back to top</a></div>
