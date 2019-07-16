@@ -1,3 +1,5 @@
+[Lab 1 - Environment Setup](../labs/lab-environment-setup.md) > Lab 2 - Postman Collection
+
 # Lab 2 - Postman Collection
 In this lab, we will create a collection of HTTP requests using Postman. These requests will demonstrate the full suite of methods available within the Form Recognizer service. For more details on the Form Recognizer API, check out the [API Reference](https://aka.ms/form-recognizer/api).
 
@@ -18,7 +20,7 @@ In this lab, we will create a collection of HTTP requests using Postman. These r
 ## Step 1 - Create a Collection
 1. Open Postman
 2. Click **New Collection**  
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-create.png "Create a Collection")
+   ![alt text](../resources/images/img-postman-collection-create.png "Create a Collection")
 3. Provide the collection a name (e.g. Form Recognizer)
 4. Navigate to **Variables**
 5. Create the following variables with their corresponding values:  
@@ -27,33 +29,33 @@ In this lab, we will create a collection of HTTP requests using Postman. These r
    | ------------- | ------------- |
    | region | This will be ```westus2``` or ```westeurope``` depending on which location you selected when creating the Form Recognizer service. |
    | subscription_key | To find your Form Recognizer subscription key, navigate to the resource within the Azure Portal and open **Keys** under Resource Management. |
-   | shared_access_signature | This is the Shared Access Signature URI generated from the previous [environment setup lab](https://github.com/tayganr/DataOps/blob/master/labs/lab-environment-setup.md#step-4---generate-a-shared-access-signature). |
+   | shared_access_signature | This is the Shared Access Signature URI generated from the previous [environment setup lab](../labs/lab-environment-setup.md#step-4---generate-a-shared-access-signature). |
    | model_id | This can be left blank for now as we don't have a model id just yet, this will happen after we train a model. |
 
 
 6. Click **Create**  
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-variables.png "Collection Variables")
+   ![alt text](../resources/images/img-postman-collection-variables.png "Collection Variables")
 
 <div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
 ## Step 2 - Create a Request
 In this section we will walk through how to setup a HTTP request in Postman using the Train Model API as an example. Once complete, you will be equipped with the knowledge to continue setting up requests for the remaining API's.
 1. Right-click on the collection and click **Add Request**.  
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-request1.png "Add Request")
+   ![alt text](../resources/images/img-postman-collection-request1.png "Add Request")
 
 2. Provide the request a name (e.g. Train Model), a description (optional), then click **Save to Form Recognizer**.  
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-request2.png "Create Request")
+   ![alt text](../resources/images/img-postman-collection-request2.png "Create Request")
 
 3. Expand the Form Recognizer collection, hover over the newly created request to reveal the ellipsis, click the button and click **Open in New Tab**.  
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-request3.png "Open in New Tab")
+   ![alt text](../resources/images/img-postman-collection-request3.png "Open in New Tab")
 
 4. In this example, we need to change the HTTP Method from GET to POST. To do this, click the arrow next to GET and select POST.  
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-method.png "Postman HTTP Method")
+   ![alt text](../resources/images/img-postman-request-method.png "Postman HTTP Method")
 
 5. Update the endpoint to:  
 ```https://{{region}}.api.cognitive.microsoft.com/formrecognizer/v1.0-preview/custom/train```  
 **Note:** The portion of the endpoint that includes "region" surrounded by curly braces is a reference to the collection variable that we created in step 1 of this lab. This allows us to change the value of the variable in a central location and have the update propogate out to all requests within the Postman collection that make reference to it.  
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-endpoint.png "Postman HTTP Endpoint")
+   ![alt text](../resources/images/img-postman-request-endpoint.png "Postman HTTP Endpoint")
 
 6. Navigate to **Headers** and create the following key-value pairs:  
 
@@ -62,7 +64,7 @@ In this section we will walk through how to setup a HTTP request in Postman usin
     | Content-Type | application/json |
     | Ocp-Apim-Subscription-Key | ```{{subscription_key}}``` |
 
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-headers.png "Postman HTTP Headers")
+   ![alt text](../resources/images/img-postman-request-headers.png "Postman HTTP Headers")
 
 7. As this particular HTTP request example is of type POST, we must provide some data to the API in the body of the HTTP request.  Navigate to **Body**, select **raw**, copy and paste the below JSON code snippet, and finally click **Save**.  
 
@@ -76,15 +78,15 @@ In this section we will walk through how to setup a HTTP request in Postman usin
     }
     ```
 
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-body.png "Postman HTTP Body")
+   ![alt text](../resources/images/img-postman-request-body.png "Postman HTTP Body")
 
 8. Now that our request is complete, click **Send**. This will initiate the HTTP request and subsequently return a HTTP response.  If successful, the **Status** of the response will be **200 OK**. In this example as we are using the **Train Model** API, the JSON returned includes a reference to a **modelId** as well as the list of **trainingDocuments** and their corresponding details (e.g. documentName, pages, errors, status). Copy the **modelId**.
 
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-response.png "Postman HTTP Response")
+   ![alt text](../resources/images/img-postman-request-response.png "Postman HTTP Response")
 
 9. Navigate back to the **Edit Collection** screen, switch to **Variables**, paste the **modelId** value, click **Update**.
 
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-modelid.png "Form Recognizer Model ID")
+   ![alt text](../resources/images/img-postman-collection-modelid.png "Form Recognizer Model ID")
 
 <div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
@@ -246,7 +248,7 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 
 **Body**  
 Within the **Body** section of the Postman request, select **binary**, click **Select File**, then locate **test01.png** provided as part of the sample data.  
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-binary.png "POST Body Binary")
+   ![alt text](../resources/images/img-postman-request-binary.png "POST Body Binary")
 
 **Sample Response**
 ```json
@@ -339,4 +341,13 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 **Sample Response**  
 HTTP Status Code 204
 
+**Note:** If the model has been deleted successfully, there will be no content returend as part of the response, only a HTTP Status Code of 204 to confirm the operation. Alternatively, if an error has occurred, the status code will be 500 along with an error message.
+
+**Optional:** Re-run the **Get Models** API, it should return an empty array.
+
 <div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
+
+## Next Steps
+You should now have a good understanding of each of the API's, input requirements, and expected responses. In the next exercise we will look at how we can programmatically work with the API in Python and host our code as a serverless Azure Function. Click here to progress to [Lab 3 - Azure Functions](#).
+
+<div align="right"><a href="#lab-1---environment-setup">↥ back to top</a></div>
