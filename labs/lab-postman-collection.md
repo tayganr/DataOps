@@ -241,11 +241,12 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 
 | Key | Value |
 | ------------- | ------------- |
-| Content-Type | image/png |
+| Content-Type | This will be ```image/png```, ```image/jpeg```, or ```application/pdf``` dependent on the type of file you include in the body of the HTTP request. |
 | Ocp-Apim-Subscription-Key | ```{{subscription_key}}``` |
 
 **Body**  
-Insert image of Body > Binary > analyze_form.png  
+Within the **Body** section of the Postman request, select **binary**, click **Select File**, then locate **test01.png** provided as part of the sample data.  
+   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-binary.png "POST Body Binary")
 
 **Sample Response**
 ```json
