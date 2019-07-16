@@ -33,7 +33,7 @@ In this lab, we will create a collection of HTTP requests using Postman. These r
 6. Click **Create**  
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-variables.png "Collection Variables")
 
-<div align="right"><a href="#----">↥ back to top</a></div>
+<div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
 ## Step 2 - Create a Request
 In this section we will walk through how to setup a HTTP request in Postman using the Train Model API as an example. Once complete, you will be equipped with the knowledge to continue setting up requests for the remaining API's.
@@ -81,7 +81,7 @@ In this section we will walk through how to setup a HTTP request in Postman usin
 
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-response.png "Postman HTTP Response")
 
-<div align="right"><a href="#----">↥ back to top</a></div>
+<div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
 ## API 1 - Train Model
 Create and train a custom model. The train request must include a source parameter that is either an externally accessible Azure Storage blob container Uri (preferably a Shared Access Signature Uri) or valid path to a data folder in a locally mounted drive.
@@ -109,7 +109,7 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
   }
 }
 ```
-<div align="right"><a href="#----">↥ back to top</a></div>
+<div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
 ## API 2 - Get Models
 **HTTP Method**  
@@ -124,7 +124,7 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 | ------------- | ------------- |
 | Ocp-Apim-Subscription-Key | ```{{subscription_key}}``` |
 
-<div align="right"><a href="#----">↥ back to top</a></div>
+<div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
 ## API 3 - Get Model
 **HTTP Method**  
@@ -140,7 +140,7 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 | Content-Type | application/json |
 | Ocp-Apim-Subscription-Key | ```{{subscription_key}}``` |
 
-<div align="right"><a href="#----">↥ back to top</a></div>
+<div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
 ## API 4 - Get Keys
 **HTTP Method**  
@@ -155,7 +155,7 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 | ------------- | ------------- |
 | Ocp-Apim-Subscription-Key | ```{{subscription_key}}``` |
 
-<div align="right"><a href="#----">↥ back to top</a></div>
+<div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
 ## API 5 - Analyze Form
 **HTTP Method**  
@@ -174,7 +174,7 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 **Body**  
 Insert image of Body > Binary > analyze_form.png  
 
-<div align="right"><a href="#----">↥ back to top</a></div>
+<div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
 ## API 6 - Delete Model
 **HTTP Method**  
