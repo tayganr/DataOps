@@ -5,6 +5,7 @@ In this lab, we will create a collection of HTTP requests using Postman. These r
    **Steps**  
    [Step 1 - Create a Collection](#step-1---create-a-collection)  
    [Step 2 - Create a Request](#step-2---create-a-request)  
+   [Step 3 - Create Remaining Requests](#step-3---create-remaining-requests)  
    
    **API's**  
    [API 1 - Train Model](#api-1---train-model)  
@@ -123,6 +124,8 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 <div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
 ## API 2 - Get Models
+Get information about all trained custom models.
+
 **HTTP Method**  
 GET
 
@@ -138,6 +141,8 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 <div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
 ## API 3 - Get Model
+Get information about a model.
+
 **HTTP Method**  
 GET
 
@@ -154,6 +159,8 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 <div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
 ## API 4 - Get Keys
+Retrieve the keys that were extracted during the training of the specified model.
+
 **HTTP Method**  
 GET
 
@@ -169,6 +176,8 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 <div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
 ## API 5 - Analyze Form
+Extract key-value pairs from a given document. The input document must be of one of the supported content types - 'application/pdf', 'image/jpeg' or 'image/png'. A success response is returned in JSON.
+
 **HTTP Method**  
 POST
 
@@ -188,6 +197,8 @@ Insert image of Body > Binary > analyze_form.png
 <div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
 ## API 6 - Delete Model
+Delete model artifacts.
+
 **HTTP Method**  
 DELETE
 
