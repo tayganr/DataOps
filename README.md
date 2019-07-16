@@ -1,6 +1,8 @@
-# DataOps
+# Form recognizer DataOps pipleine
 ## About this course
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Welcome to the Form Recognizer (FR) Solution Accelerator! This accelerator was built to provide developers with all of the resources needed to quickly build an initial form understanding prototype with Azure FR service. Use this accelerator to jump start your development efforts with your own data or as a learning tool to better understand how FR can be leveraged for the unique needs of your business.
+
+In this repository, we've provided you with all of the artifacts needed to quickly create a FR content management pipeline including: templates for deploying the appropriate Azure resources, assets for creating your first trained FR, a pipeline to help automate the ingestion and storage. This extends the ability to allow you to build your own triggers and suporting worksflow to react to errors or specifc content that has been extracted. We've opted to use serverless building blocks like Functions and Flow to create the orchestration with easy to follow recipes.
 
 ## Architecture
 <\<insert image here\>>
