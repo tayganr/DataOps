@@ -77,9 +77,13 @@ In this section we will walk through how to setup a HTTP request in Postman usin
 
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-body.png "Postman HTTP Body")
 
-8. Now that our request is complete, click **Send**. This will initiate the HTTP request and subsequently return a HTTP response.  
+8. Now that our request is complete, click **Send**. This will initiate the HTTP request and subsequently return a HTTP response.  If successful, the **Status** of the response will be **200 OK**. In this example as we are using the **Train Model** API, the JSON returned includes a reference to a **modelId** as well as the list of **trainingDocuments** and their corresponding details (e.g. documentName, pages, errors, status). Copy the **modelId**.
 
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-response.png "Postman HTTP Response")
+
+9. Navigate back to the **Edit Collection** screen, switch to **Variables**, paste the **modelId** value, click **Update**.
+
+   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-modelid.png "Form Recognizer Model ID")
 
 <div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
@@ -188,3 +192,5 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 | Key | Value |
 | ------------- | ------------- |
 | Ocp-Apim-Subscription-Key | ```{{subscription_key}}``` |
+
+<div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
