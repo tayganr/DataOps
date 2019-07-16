@@ -24,20 +24,20 @@ In this lab, we will create a collection of HTTP requests using Postman. These r
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-variables.png "Collection Variables")
 
 ## Step 2 - Create a Request
-In this section we will walk through how to setup a request in Postman using the Train Model API as an example. Once complte, you will be equipped with the knowledge to continue setting up requests for the remaining API's.
-1. Right-click on the collection and click **Add Request**  
+In this section we will walk through how to setup a HTTP request in Postman using the Train Model API as an example. Once complete, you will be equipped with the knowledge to continue setting up requests for the remaining API's.
+1. Right-click on the collection and click **Add Request**.  
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-request1.png "Add Request")
 
-2. Provide the request a name (e.g. Train Model), a description (optional), then click **Save to Form Recognizer**  
+2. Provide the request a name (e.g. Train Model), a description (optional), then click **Save to Form Recognizer**.  
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-request2.png "Create Request")
 
-3. Expand the Form Recognizer collection, hover over the newly created request to reveal the ellipsis, click the button and click **Open in New Tab**  
+3. Expand the Form Recognizer collection, hover over the newly created request to reveal the ellipsis, click the button and click **Open in New Tab**.  
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-request3.png "Open in New Tab")
 
-4. In this example, we need to change the HTTP Method from GET to POST. To do this, click the arrow next to GET and select POST  
+4. In this example, we need to change the HTTP Method from GET to POST. To do this, click the arrow next to GET and select POST.  
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-method.png "Open in New Tab")
 
-5. Update the endpoint to: ```https://{{region}}.api.cognitive.microsoft.com/formrecognizer/v1.0-preview/custom/train``` Note: The portion of the endpoint that includes "region" surrounded by curly braces is a reference to one the collection variables that we created earlier. This allows us to update the value of the variable in one location and have it propogate out to all requests within the Postman collection.  
+5. Update the endpoint to: ```https://{{region}}.api.cognitive.microsoft.com/formrecognizer/v1.0-preview/custom/train``` **Note:** The portion of the endpoint that includes "region" surrounded by curly braces is a reference to the collection variables that we created earlier. This allows us to update the value of the variable in one location and have it propogate out to all requests within the Postman collection.  
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-endpoint.png "Open in New Tab")
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-headers.png "Open in New Tab")
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-body.png "Open in New Tab")
