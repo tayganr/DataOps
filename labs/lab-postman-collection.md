@@ -121,6 +121,28 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
   }
 }
 ```
+
+**Sample Response**
+```json
+{
+  "modelId": "string",
+  "trainingDocuments": [
+    {
+      "documentName": "string",
+      "pages": 0,
+      "errors": [
+        "string"
+      ],
+      "status": "success"
+    }
+  ],
+  "errors": [
+    {
+      "errorMessage": "string"
+    }
+  ]
+}
+```
 <div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
 ## API 2 - Get Models
@@ -137,6 +159,20 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 | Key | Value |
 | ------------- | ------------- |
 | Ocp-Apim-Subscription-Key | ```{{subscription_key}}``` |
+
+**Sample Response**
+```json
+{
+  "models": [
+    {
+      "modelId": "string",
+      "status": "created",
+      "createdDateTime": "string",
+      "lastUpdatedDateTime": "string"
+    }
+  ]
+}
+```
 
 <div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
@@ -156,6 +192,16 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 | Content-Type | application/json |
 | Ocp-Apim-Subscription-Key | ```{{subscription_key}}``` |
 
+**Sample Response**
+```json
+{
+  "modelId": "string",
+  "status": "created",
+  "createdDateTime": "string",
+  "lastUpdatedDateTime": "string"
+}
+```
+
 <div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
 ## API 4 - Get Keys
@@ -172,6 +218,13 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 | Key | Value |
 | ------------- | ------------- |
 | Ocp-Apim-Subscription-Key | ```{{subscription_key}}``` |
+
+**Sample Headers**
+```json
+{
+  "clusters": {}
+}
+```
 
 <div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
@@ -194,6 +247,77 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 **Body**  
 Insert image of Body > Binary > analyze_form.png  
 
+**Sample Response**
+```json
+{
+  "status": "success",
+  "pages": [
+    {
+      "number": 0,
+      "height": 0,
+      "width": 0,
+      "clusterId": 0,
+      "keyValuePairs": [
+        {
+          "key": [
+            {
+              "text": "string",
+              "boundingBox": [
+                0.0
+              ],
+              "confidence": 0.0
+            }
+          ],
+          "value": [
+            {
+              "text": "string",
+              "boundingBox": [
+                0.0
+              ],
+              "confidence": 0.0
+            }
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "id": "string",
+          "columns": [
+            {
+              "header": [
+                {
+                  "text": "string",
+                  "boundingBox": [
+                    0.0
+                  ],
+                  "confidence": 0.0
+                }
+              ],
+              "entries": [
+                [
+                  {
+                    "text": "string",
+                    "boundingBox": [
+                      0.0
+                    ],
+                    "confidence": 0.0
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "errorMessage": "string"
+    }
+  ]
+}
+```
+
 <div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
 ## API 6 - Delete Model
@@ -210,5 +334,8 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 | Key | Value |
 | ------------- | ------------- |
 | Ocp-Apim-Subscription-Key | ```{{subscription_key}}``` |
+
+**Sample Response**
+HTTP Status Code 204
 
 <div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
