@@ -28,8 +28,11 @@ In this section we will walk through how to setup a request in Postman using the
 1. Right-click on the collection and click **Add Request**  
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-request1.png "Add Request")
 
-2. Provide the request a name (e.g. Train Model), a description (optional), then click **Save to Form Recognizer**.  
+2. Provide the request a name (e.g. Train Model), a description (optional), then click **Save to Form Recognizer**  
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-request2.png "Create Request")
+
+3. Expand the Form Recognizer collection, hover over the newly created request to reveal the ellipsis, click the button and click **Open in New Tab**  
+   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-request3.png "Open in New Tab")
 
 ## Step 1 - Train Model
 Create and train a custom model. The train request must include a source parameter that is either an externally accessible Azure Storage blob container Uri (preferably a Shared Access Signature Uri) or valid path to a data folder in a locally mounted drive.
