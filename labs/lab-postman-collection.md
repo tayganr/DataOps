@@ -2,7 +2,14 @@
 In this lab, we will create a collection of HTTP requests using Postman. These requests will demonstrate the full suite of methods available within the Form Recognizer service. For more details on the Form Recognizer API, check out the [API Reference](https://aka.ms/form-recognizer/api).
 
 ## Table of Contents
-   [Step 1 - Train Model](#step-1---train-model)  
+   [Step 1 - Create a Collection](#step-1---create-a-collection)  
+   [Step 2 - Create a Request](#step-2---create-a-request)  
+   [API 1 - Train Model](#api-1---train-model)  
+   [API 2 - Get Models](#api-2---get-models)  
+   [API 3 - Get Model](#api-3---get-model)  
+   [API 4 - Get Keys](#api-4---get-keys)  
+   [API 5 - Analyze Form](#api-5---analyze-form)  
+   [API 6 - Delete Model](#api-6---delete-model)  
 
 ## Step 1 - Create a Collection
 1. Open Postman
@@ -35,14 +42,41 @@ In this section we will walk through how to setup a HTTP request in Postman usin
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-request3.png "Open in New Tab")
 
 4. In this example, we need to change the HTTP Method from GET to POST. To do this, click the arrow next to GET and select POST.  
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-method.png "Open in New Tab")
+   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-method.png "Postman HTTP Method")
 
-5. Update the endpoint to: ```https://{{region}}.api.cognitive.microsoft.com/formrecognizer/v1.0-preview/custom/train``` **Note:** The portion of the endpoint that includes "region" surrounded by curly braces is a reference to the collection variables that we created earlier. This allows us to update the value of the variable in one location and have it propogate out to all requests within the Postman collection.  
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-endpoint.png "Open in New Tab")
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-headers.png "Open in New Tab")
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-body.png "Open in New Tab")
+5. Update the endpoint to:  
+```https://{{region}}.api.cognitive.microsoft.com/formrecognizer/v1.0-preview/custom/train```  
+**Note:** The portion of the endpoint that includes "region" surrounded by curly braces is a reference to the collection variable that we created in step 1 of this lab. This allows us to change the value of the variable in a central location and have the update propogate out to all requests within the Postman collection that make reference to it.  
+   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-endpoint.png "Postman HTTP Endpoint")
 
-## Step 1 - Train Model
+6. Navigate to **Headers** and create the following key-value pairs:  
+
+    | Key | Value |
+    | ------------- | ------------- |
+    | Content-Type | application/json |
+    | Ocp-Apim-Subscription-Key | ```{{subscription_key}}``` |
+
+   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-headers.png "Postman HTTP Headers")
+
+7. As this particular HTTP request example is of type POST, we must provide some data to the API in the body of the HTTP request.  Navigate to **Body**, select **raw**, copy and paste the below JSON code snippet, and finally click **Save**.  
+
+    ```json
+    {
+      "source": "{{shared_access_signature}}",
+      "sourceFilter": {
+        "prefix": "form",
+        "includeSubFolders": true
+      }
+    }
+    ```
+
+   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-body.png "Postman HTTP Body")
+
+8. Now that our request is complete, click **Send**. This will initiate the HTTP request and subsequently return a HTTP response.  
+
+   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-response.png "Postman HTTP Response")
+
+## API 1 - Train Model
 Create and train a custom model. The train request must include a source parameter that is either an externally accessible Azure Storage blob container Uri (preferably a Shared Access Signature Uri) or valid path to a data folder in a locally mounted drive.
 
 **HTTP Method**  
@@ -69,7 +103,7 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 }
 ```
 
-## Step 1 - Get Models
+## API 2 - Get Models
 **HTTP Method**  
 GET
 
@@ -82,7 +116,7 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 | ------------- | ------------- |
 | Ocp-Apim-Subscription-Key | ```{{subscription_key}}``` |
 
-## Step 1 - Get Model
+## API 3 - Get Model
 **HTTP Method**  
 GET
 
@@ -96,7 +130,7 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 | Content-Type | application/json |
 | Ocp-Apim-Subscription-Key | ```{{subscription_key}}``` |
 
-## Step 1 - Get Keys
+## API 4 - Get Keys
 **HTTP Method**  
 GET
 
@@ -109,7 +143,7 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 | ------------- | ------------- |
 | Ocp-Apim-Subscription-Key | ```{{subscription_key}}``` |
 
-## Step 1 - Analyze Form
+## API 5 - Analyze Form
 **HTTP Method**  
 POST
 
@@ -126,7 +160,7 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 **Body**  
 Insert image of Body > Binary > analyze_form.png  
 
-## Step 1 - Delete Model
+## API 6 - Delete Model
 **HTTP Method**  
 DELETE
 
