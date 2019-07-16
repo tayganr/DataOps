@@ -1,4 +1,4 @@
-[Lab 1 - Environment Setup](../labs/lab-environment-setup.md) > Lab 2 - Postman Collection
+[Lab 1 - Environment Setup](../labs/lab-environment-setup.md) > [Lab 2 - Postman Collection](../labs/lab-postman-collection.md) > [Lab 3 - Azure Functions](../labs/lab-azure-functions.md)
 
 # Lab 2 - Postman Collection
 In this lab, we will create a collection of HTTP requests using Postman. These requests will demonstrate the full suite of methods available within the Form Recognizer service. For more details on the Form Recognizer API, check out the [API Reference](https://aka.ms/form-recognizer/api).

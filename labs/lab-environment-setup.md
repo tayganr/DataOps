@@ -1,4 +1,4 @@
-Lab 1 - Environment Setup > [Lab 2 - Postman Collection](../labs/postman-collection.md)
+[Lab 1 - Environment Setup](../labs/lab-environment-setup.md) > [Lab 2 - Postman Collection](../labs/lab-postman-collection.md) > [Lab 3 - Azure Functions](../labs/lab-azure-functions.md)
 
 # Lab 1 - Environment Setup
 In this lab, we will create a Form Recognizer service, an Azure Storage Account, upload some training data, and generate a Shared Access Signature URI. We recommend keeping all resources within the same resource group and the same Azure region, this will make it easier to delete at the end of the workshop and reduce latency.
