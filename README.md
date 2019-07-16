@@ -14,7 +14,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 3. [Postman](https://www.getpostman.com/) installed on your local machine.
 
    Note:
-   * Form Recognizer access requests are approved in batches, please provide some lead time before embarking on this exercise.
+   * Form Recognizer access requests are approved in batches, please provide some lead time before proceeding with this exercise.
    * If you don't have access to an Azure subscription, you can create a [free Azure account](https://azure.microsoft.com/en-us/free/) with $200 USD credit to explore any Azure service for 30 days.
    * If you are new to Postman, check out [Part 1: Sending a Request](https://www.youtube.com/watch?v=YKalL1rVDOE) in the New to Postman video series.
 
