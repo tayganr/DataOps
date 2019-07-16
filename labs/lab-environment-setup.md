@@ -77,4 +77,4 @@ By this point you should have the following resources available:
 * Azure Storage Account (with shared access signature URI)
 * [Sample Data](https://github.com/tayganr/DataOps/raw/master/resources/data/forms.zip) (1. Downloaded; 2. Extracted locally; 3. Training forms uploaded to Azure Blob Storage)
 
-Click here to progress to [Lab 2 - Postman Collection](https://github.com/tayganr/DataOps/blob/master/labs/lab-postman-collection.md).
+If all of these pre-steps are complete, click here to progress to [Lab 2 - Postman Collection](https://github.com/tayganr/DataOps/blob/master/labs/lab-postman-collection.md).
