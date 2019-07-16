@@ -2,7 +2,7 @@
 ## About
 Welcome to the Form Recognizer Solution Accelerator! This accelerator was built to provide developers with all of the resources needed to quickly build an initial form understanding prototype with the Azure Form Recognizer Cognitive Service. Use this accelerator to jump start your development efforts with your own data or as a learning tool to better understand how Form Recognizer can be leveraged for the unique needs of your business.
 
-In this repository, we've provided you with all of the artifacts needed to quickly create a Form Recognizer content management pipeline including: templates for deploying the appropriate Azure resources, assets for creating your first trained Form Recognizer model, a pipeline to help automate the ingestion and storage. This extends the ability to allow you to build your own triggers and suporting workflows to react to errors or specifc content that has been extracted. We've opted to use serverless building blocks like Functions and Flow to create the orchestration with easy to follow recipes.
+In this repository, we've provided you with all of the artifacts needed to quickly create a Form Recognizer content management pipeline including: templates for deploying the appropriate Azure resources, assets for creating your first trained Form Recognizer model, a pipeline to help automate the ingestion and storage. This extends the ability to allow you to build your own triggers and supporting workflows to react to errors or specific content that has been extracted. We've opted to use serverless building blocks like Functions and Flow to create the orchestration with easy to follow recipes.
 
 ## Architecture
 ![alt text](resources/images/img-dataops-formrecognizer-architecture.png "Form Recognizer DataOps Pipeline")
@@ -29,11 +29,12 @@ In this repository, we've provided you with all of the artifacts needed to quick
 This course is designed as an intermediate level course for AI engineers and/or Cloud Solution Architects.
 
 ## Course Modules
-1. Lab 1 - [Environment Setup](https://github.com/tayganr/DataOps/blob/master/labs/lab-environment-setup.md)
-2. Lab 2 - [Postman Collection](https://github.com/tayganr/DataOps/blob/master/labs/lab-postman-collection.md)
-3. Lab 3 - TBC
-4. Lab 4 - TBC
-5. Lab 5 - TBC
+* Lab 1 - [Environment Setup](labs/lab-environment-setup.md)
+* Lab 2 - [Postman Collection](labs/lab-postman-collection.md)
+* Lab 3 - [Azure Functions](labs/lab-azure-functions.md)
+* Lab 4 - [Azure Data Factory](#)
+* Lab 5 - [Azure SQL Database](#)
+* Lab 6 - [Power BI](#)
 
 ## Resources - Form Recognizer
 * [Access Request](https://aka.ms/FormRecognizerRequestAccess)

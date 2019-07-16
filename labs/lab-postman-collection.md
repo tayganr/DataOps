@@ -54,7 +54,7 @@ In this section we will walk through how to setup a HTTP request in Postman usin
 
 5. Update the endpoint to:  
 ```https://{{region}}.api.cognitive.microsoft.com/formrecognizer/v1.0-preview/custom/train```  
-**Note:** The portion of the endpoint that includes "region" surrounded by curly braces is a reference to the collection variable that we created in step 1 of this lab. This allows us to change the value of the variable in a central location and have the update propogate out to all requests within the Postman collection that make reference to it.  
+**Note:** The portion of the endpoint that includes "region" surrounded by curly braces is a reference to the collection variable that we created in step 1 of this lab. This allows us to change the value of the variable in a central location and have the update propagate out to all requests within the Postman collection that make reference to it.  
    ![alt text](../resources/images/img-postman-request-endpoint.png "Postman HTTP Endpoint")
 
 6. Navigate to **Headers** and create the following key-value pairs:  
@@ -341,7 +341,7 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 **Sample Response**  
 HTTP Status Code 204
 
-**Note:** If the model has been deleted successfully, there will be no content returend as part of the response, only a HTTP Status Code of 204 to confirm the operation. Alternatively, if an error has occurred, the status code will be 500 along with an error message.
+**Note:** If the model has been deleted successfully, there will be no content returned as part of the response, only a HTTP Status Code of 204 to confirm the operation. Alternatively, if an error has occurred, the status code will be 500 along with an error message.
 
 **Optional:** Re-run the **Get Models** API, it should return an empty array.
 
