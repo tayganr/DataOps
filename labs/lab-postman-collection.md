@@ -87,6 +87,13 @@ In this section we will walk through how to setup a HTTP request in Postman usin
 
 <div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
 
+## Step 3 - Create Remaining Requests
+By this point, we have learnt how to setup a HTTP request within a Postman collection and train a custom Form Recognizer model. Repeat [Step 2](#step-2---create-a-request) for the remaining API's to complete your Postman collection. This will demonstrate the full suite of Form Recognizer API's (Train Model > Get Models > Get Model > Get Keys > Analyze Form > Delete Model) and heighten your understanding of how they could potentially be used programmatically with your language of choice.
+
+Note: As we have already created a saved request for Train Model, skip to [API 2 - Get Models](#api-2---get-models).
+
+<div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
+
 ## API 1 - Train Model
 Create and train a custom model. The train request must include a source parameter that is either an externally accessible Azure Storage blob container Uri (preferably a Shared Access Signature Uri) or valid path to a data folder in a locally mounted drive.
 
