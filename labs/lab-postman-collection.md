@@ -219,7 +219,7 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 | ------------- | ------------- |
 | Ocp-Apim-Subscription-Key | ```{{subscription_key}}``` |
 
-**Sample Headers**
+**Sample Response**
 ```json
 {
   "clusters": {}
@@ -335,7 +335,7 @@ https://```{{region}}```.api.cognitive.microsoft.com/formrecognizer/v1.0-preview
 | ------------- | ------------- |
 | Ocp-Apim-Subscription-Key | ```{{subscription_key}}``` |
 
-**Sample Response**
+**Sample Response**  
 HTTP Status Code 204
 
 <div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
