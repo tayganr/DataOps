@@ -1,5 +1,5 @@
-# Postman Collection
-In this lab, we will create a collection of HTTP requests using Postman. These requests will demonstrate the full suite of methods available within the Form Recognizer service. For more details, check out the [API Reference](https://aka.ms/form-recognizer/api).
+# Lab 2 - Postman Collection
+In this lab, we will create a collection of HTTP requests using Postman. These requests will demonstrate the full suite of methods available within the Form Recognizer service. For more details on the Form Recognizer API, check out the [API Reference](https://aka.ms/form-recognizer/api).
 
 ## Table of Contents
    [Step 1 - Train Model](#step-1---train-model)  
@@ -23,9 +23,13 @@ In this lab, we will create a collection of HTTP requests using Postman. These r
 6. Click **Create**  
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-variables.png "Collection Variables")
 
-## Step 2 - Create a Request (Train Model)
+## Step 2 - Create a Request
+In this section we will walk through how to setup a request in Postman using the Train Model API as an example. Once complte, you will be equipped with the knowledge to continue setting up requests for the remaining API's.
 1. Right-click on the collection and click **Add Request**  
-   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-request.png "Add Request")
+   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-request1.png "Add Request")
+
+2. Provide the request a name (e.g. Train Model), a description (optional), then click **Save to Form Recognizer**.  
+   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-request2.png "Create Request")
 
 ## Step 1 - Train Model
 Create and train a custom model. The train request must include a source parameter that is either an externally accessible Azure Storage blob container Uri (preferably a Shared Access Signature Uri) or valid path to a data folder in a locally mounted drive.
