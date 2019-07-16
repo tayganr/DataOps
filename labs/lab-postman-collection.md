@@ -34,6 +34,14 @@ In this section we will walk through how to setup a request in Postman using the
 3. Expand the Form Recognizer collection, hover over the newly created request to reveal the ellipsis, click the button and click **Open in New Tab**  
    ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-collection-request3.png "Open in New Tab")
 
+4. In this example, we need to change the HTTP Method from GET to POST. To do this, click the arrow next to GET and select POST  
+   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-method.png "Open in New Tab")
+
+5. Update the endpoint to: ```https://{{region}}.api.cognitive.microsoft.com/formrecognizer/v1.0-preview/custom/train``` Note: The portion of the endpoint that includes "region" surrounded by curly braces is a reference to one the collection variables that we created earlier. This allows us to update the value of the variable in one location and have it propogate out to all requests within the Postman collection.  
+   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-endpoint.png "Open in New Tab")
+   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-headers.png "Open in New Tab")
+   ![alt text](https://github.com/tayganr/DataOps/raw/master/resources/images/img-postman-request-body.png "Open in New Tab")
+
 ## Step 1 - Train Model
 Create and train a custom model. The train request must include a source parameter that is either an externally accessible Azure Storage blob container Uri (preferably a Shared Access Signature Uri) or valid path to a data folder in a locally mounted drive.
 
