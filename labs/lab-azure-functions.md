@@ -25,7 +25,7 @@ In this lab, we will look at how we can start to interact with the Form Recogniz
 * [Form Recognizer Resource](https://docs.microsoft.com/en-us/azure/cognitive-services/form-recognizer/overview)
 * [Trained Form Recognizer Model](https://docs.microsoft.com/en-us/azure/cognitive-services/form-recognizer/quickstarts/python-train-extract)
 
-<div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
+<div align="right"><a href="#lab-3---azure-functions">↥ back to top</a></div>
 
 ## Step 2 - Environment Setup
 1. Azure Portal > Create a Function App
@@ -59,7 +59,7 @@ In this lab, we will look at how we can start to interact with the Form Recogniz
 9. Select the **Function** authorization level.
    ![alt text](../resources/images/img-azure-functions-new-auth.png "Select an authorization level")
 
-<div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
+<div align="right"><a href="#lab-3---azure-functions">↥ back to top</a></div>
 
 ## Step 3 - Python Library Requirements
 * Run the following command in your activated environment via Terminal: ```pip install azure-storage-blob```  
@@ -67,7 +67,7 @@ In this lab, we will look at how we can start to interact with the Form Recogniz
 * Add the following line to **requirements.txt**: ```azure-storage-blob==1.4.0```  
    ![alt text](../resources/images/img-vscode-functions-project-requirements.png "Select an authorization level")
 
-<div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
+<div align="right"><a href="#lab-3---azure-functions">↥ back to top</a></div>
 
 ## Step 4 - Python Code Sample
 This can be copy and pasted into **\_\_init\_\_.py**
@@ -115,7 +115,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     return func.HttpResponse(body,headers={'Content-Type':'application/json'})
 ```
 
-<div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
+<div align="right"><a href="#lab-3---azure-functions">↥ back to top</a></div>
 
 ## Step 5 - Test the Azure Function Locally using Postman
 1. Execute the following command in Terminal to launch the functions runtime host: ``func start``
@@ -140,7 +140,7 @@ If successful, this should return the results of the form being processed by the
 
    ![alt text](../resources/images/img-postman-local-function.png "Test function locally using Postman")
 
-<div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
+<div align="right"><a href="#lab-3---azure-functions">↥ back to top</a></div>
 
 ## Step 6 - Publish the Azure Function
 Execute the following terminal command to publish the current directory contents to an Azure Function App:  
@@ -148,7 +148,7 @@ Execute the following terminal command to publish the current directory contents
 
 Check out [https://aka.ms/func-python-publish](https://aka.ms/func-python-publish) for more information on publishing a Python function to Azure.
 
-<div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
+<div align="right"><a href="#lab-3---azure-functions">↥ back to top</a></div>
 
 ## Step 7 - Test the Azure Function
 Once the deployment has completed successfully, a public **invoke url** will be returned to the terminal window. 
@@ -161,4 +161,4 @@ Once the deployment has completed successfully, a public **invoke url** will be 
 
 That's it! If successful, this should return the same results as before but this time, the function will be running in the cloud. We now have a serverless method of processing forms stored on Azure Blob Storage using Azure Functions.
 
-<div align="right"><a href="#lab-2---postman-collection">↥ back to top</a></div>
+<div align="right"><a href="#lab-3---azure-functions">↥ back to top</a></div>
