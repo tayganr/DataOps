@@ -4,7 +4,7 @@
 In this lab, we will look at how we can start to interact with the Form Recognizer API programmatically using Python, and how we can host this logic in a serverless environment using Azure Functions. This will allow us to operationalise our Form Recognizer pipeline, triggering the analysis of forms as they arrive in our Azure Blob Storage account, facilitating event driven architecture.
 
 ## Table of Contents
-   [Step 1 - Pre-Requisites](#step-1---pre---requisites)  
+   [Step 1 - Pre-Requisites](#step-1---pre-requisites)  
    [Step 2 - Environment Setup](#step-2---environment-setup)  
    [Step 3 - Python Library Requirements](#step-3---python-library-requirements)  
    [Step 4 - Python Code Sample](#step-4---python-code-sample)  
