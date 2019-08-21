@@ -1,6 +1,6 @@
 # Form Recognizer DataOps Pipleine
 ## About
-Welcome to the Form Recognizer Solution Accelerator! This accelerator was built to provide developers with all of the resources needed to quickly build an initial form understanding prototype with the Azure Form Recognizer Cognitive Service. Use this accelerator to jump start your development efforts with your own data or as a learning tool to better understand how Form Recognizer can be leveraged for the unique needs of your business.
+Welcome to the Form Recognizer Solution Accelerator! This was built to provide developers with all of the resources needed to quickly build an initial form understanding prototype with the Azure Form Recognizer Cognitive Service. Use this accelerator to jump start your development efforts with your own data or as a learning tool to better understand how Form Recognizer can be leveraged for the unique needs of your business.
 
 In this repository, we've provided you with all of the artifacts needed to quickly create a Form Recognizer content management pipeline including: templates for deploying the appropriate Azure resources, assets for creating your first trained Form Recognizer model, a pipeline to help automate the ingestion and storage. This extends the ability to allow you to build your own triggers and supporting workflows to react to errors or specific content that has been extracted. We've opted to use serverless building blocks like Functions and Flow to create the orchestration with easy to follow recipes.
 
@@ -12,6 +12,7 @@ In this repository, we've provided you with all of the artifacts needed to quick
 * Azure Blob Storage
 * Azure Functions
 * Cognitive Services (Form Recognizer)
+* Azure table storage
 * Azure SQL Database
 * Power BI
 
